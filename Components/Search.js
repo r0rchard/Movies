@@ -17,11 +17,11 @@ class Search extends React.Component {
   constructor(props) {
     super(props);
     this.searchedText = "";
+    isLoading: false
     this.page = 0;
     this.totalPages = 0;
     this.state = {
       films: [],
-      isLoading: false
     };
   }
   _displayDetailForFilm = (idFilm) => {
